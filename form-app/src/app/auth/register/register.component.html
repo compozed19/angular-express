@@ -1,0 +1,28 @@
+<p>register works!</p>
+
+<div class="container">
+    <div class="logo"> Create a new account </div>
+    <div class="register-items">
+        <form #myform="ngForm" (ngSubmit)="register(myform)">
+          <div class="form-field">
+              <label>Name :</label>
+              <input type="text" ngModal required>
+          </div>
+
+          <div class="form-field">
+                <label>Email :</label>
+                <input type="email" ngModal required>
+            </div>
+
+            <div class="form-field">
+                    <label>Password :</label>
+                    <input type="password" ngModal required>
+            </div>
+
+            <div class="form-field">
+                 <input type="submit" value="register">
+            </div>
+        </form>
+    </div>
+
+</div>
